@@ -55,7 +55,7 @@ public class Crypto {
         }
     }
 
-    public static String generateSHA256(String value) {
+    /*public static String generateSHA256(String value) {
         try {
 
             MessageDigest digest = MessageDigest.getInstance("SHA-256");
@@ -76,7 +76,7 @@ public class Crypto {
         } catch (NoSuchAlgorithmException e) {
             throw new RuntimeException(e);
         }
-    }
+    }*/
 
 
 
