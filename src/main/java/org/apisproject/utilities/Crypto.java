@@ -11,14 +11,14 @@ public class Crypto {
     private static final String ALGORITHM = "AES";
 
 
-    public static String encrypt(String raw, String key) throws Exception {
+   /* public static String encrypt(String raw, String key) throws Exception {
         SecretKeySpec secretKey = new SecretKeySpec(key.getBytes(), ALGORITHM);
         Cipher cipher = Cipher.getInstance(ALGORITHM);
         cipher.init(Cipher.ENCRYPT_MODE, secretKey);
         byte[] encryptedBytes = cipher.doFinal(raw.getBytes());
 
         return Base64.getEncoder().encodeToString(encryptedBytes);
-    }
+    }*/
 
     public static String decrypt(String encrypted, String key) throws Exception {
         SecretKeySpec secretKey = new SecretKeySpec(key.getBytes(), ALGORITHM);
